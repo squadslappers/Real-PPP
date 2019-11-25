@@ -7,4 +7,5 @@ const app = express();
 app.use(express.json());
 app.listen(6969, ()=>console.log(gradient.pastel('listening on port 6969')))
 
-app.get('/api/ppp',goalCtrl.getProgressions)
+app.post('/api/ppp',goalCtrl.postProgression)
+app.get('/api/ppp', goalCtrl.getProgressions)

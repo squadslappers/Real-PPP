@@ -1,30 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 
 .App {
   text-align: center;
   background: #666666;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
 }
 
 #entireOperation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 5px solid red;
 }
 
-#popup {
+.popup {
     position: fixed;
 
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.6);
 
     display: flex;
     justify-content: center;
 }
 
-#inner-popup{
+.inner-popup{
     position: fixed;
 
     width: 600px;
@@ -36,7 +37,19 @@
 
     box-sizing: border-box;
     padding: 0px 30px 20px 30px;
-    margin-top: 150px;
+    margin-top: 100px;
+}
+
+#prob {
+    font-size: 25px;
+    font-style: italic;
+    color: #990000;
+}
+
+#prog {
+    font-size: 25px;
+    font-style: italic;
+    color: #38761d;
 }
 
 .popup-input{
@@ -45,6 +58,53 @@
     font-size: 15px;
 
     padding-left: 5px;
+}
+
+.popup-button{
+    height: 50px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #666666;
+}
+
+#spiritual{
+    border: none;
+}
+
+#catPop{
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: transparent;
+
+    font-size: 40px;
+}
+
+#create{
+    align-self: center;
+
+    height: 50px;
+    width: 80%;
+    background: #3b8038;
+    border-radius: 25px;
+    
+    color: white;
+    font-size: 30px;
+
+    margin-top: 20px;
 }
 
 .header {
@@ -74,12 +134,33 @@
     color: white;
 }
 
+#category {
+    height: 100px;
+    width: calc(100vw - 150px);
+    background: #cccccc;
+    border: 5px solid white;
+    border-radius: 50px;
+
+    box-sizing: border-box;
+    margin: 30px 0px;
+
+    font-family: 'work sans', sans-serif;
+    font-size: 50px;
+}
+
 #progression {
     width: 500px;
     background: #6aa84f;
     border-radius: 15px;
 
-    margin-top: 30px;
+    margin-bottom: 30px;
 
     color: #274e13;
+}
+
+.calendar{
+    align-self: center;
+
+    border-radius: 10px;
+    background-color: #666666;
 }
